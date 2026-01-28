@@ -1,0 +1,269 @@
+/* Start Variables */
+:root {
+    --main-color: #eee;
+    --main-blue-color: #2196f3;
+    --main-alt-blue-color: #1979c7;
+}
+/* End Variables */
+/* Start Global Styling */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-alt-blue-color);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Styling */
+/* Start Header */
+header {
+    padding: 20px;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+header .container .links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .container .links li {
+    overflow: hidden;
+}
+header .container .links li a {
+    font-size: 14px;
+    color: black;
+    position: relative;
+    transition: 0.3s;
+}
+header .container .links li a:hover {
+    color: var(--main-blue-color);
+}
+header .container .links li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-blue-color);
+    bottom: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+header .container .links li a:hover::before {
+    left: 0;
+}
+/* End Header */
+/* Start Banner */
+.banner {
+    text-align: center;
+    background-color: #eee;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.banner h1 {
+    margin-bottom: 15px;
+}
+.banner h1 span {
+    color: var(--main-blue-color);
+}
+.banner p {
+    line-height: 1.8;
+}
+/* End Banner */
+/* Start Featured */
+.features {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.features .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.features .container .box {
+    text-align: center;
+    max-width: 250px;
+    align-items: center;
+}
+.features .container .box img {
+    width: 50px;
+}
+.features .container .box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.features .container .box p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.8;
+}
+/* End Featured */
+/* Start About */
+.about {
+    text-align: center;
+    background-color: #eee;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.about .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.about img {
+    width: 250px;
+}
+.about .info {
+    flex: 1;
+    text-align: left;
+}
+.about .info h2 {
+    margin-bottom: 20px;
+}
+.about .info p {
+    line-height: 1.8;
+}
+/* End About */
+/* Start Statistics */
+.statistics {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.statistics .container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+.statistics .box {
+    padding: 15px 85px;
+    color: white;
+    text-align: center;
+}
+.statistics .box:first-child {
+    background-color: #c62828;
+}
+.statistics .box:nth-child(2) {
+    background-color: #1565c0;
+}
+.statistics .box:Last-child {
+    background-color: #00796b;
+}
+.statistics .box span {
+    font-size: 40px;
+    font-weight: bold;
+}
+.statistics .box p {
+    font-size: 12px;
+}
+/* End Statistics */
+/* Start Skills */
+.skills {
+    background-color: #eee;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.skills .container .box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.skills .box h3 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100px;
+}
+.skills .box .progress {
+    background-color: white;
+    height: 30px;
+    width: 100%;
+}
+.skills .box .progress span {
+    background-color: var(--main-blue-color);
+    height: 30px;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+/* End Skills */
+/* Start Footer */
+footer {
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    font-size: 13px;
+}
+footer p span {
+    color: var(--main-blue-color);
+}
+/* End Footer */
