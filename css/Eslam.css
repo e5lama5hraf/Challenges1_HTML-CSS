@@ -185,10 +185,13 @@ header .container .links li a:hover::before {
 .statistics .container {
     display: flex;
     align-items: center;
-    gap: 15px;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .statistics .box {
+    flex-grow: 1;
+    flex-basis: 250px;
     padding: 15px 85px;
     color: white;
     text-align: center;
@@ -233,10 +236,16 @@ header .container .links li a:hover::before {
     justify-content: flex-end;
     width: 100px;
 }
+@media (max-width:767px) {
+    .skills .box h3 {
+        width: 130px;
+    }
+}
 .skills .box .progress {
     background-color: white;
     height: 30px;
     width: 100%;
+    position: relative;
 }
 .skills .box .progress span {
     background-color: var(--main-blue-color);
