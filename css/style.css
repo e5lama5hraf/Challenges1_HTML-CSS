@@ -59,6 +59,11 @@ body {
     top: 90vh;
     z-index: 1000;
 }
+@media (max-width:767px) {
+    .scroll-to-top {
+        top: 85vh;
+    }
+}
 .scroll-to-top a {
     position: absolute;
     display: block;
