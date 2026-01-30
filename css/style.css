@@ -68,14 +68,14 @@ body {
     position: absolute;
     display: block;
     right: 5px;
-    background-color: #f44336;
+    background-color: #2196f3;
     padding: 10px;
     text-decoration: none;
     color: white;
     transition: 0.3s;
 }
 .scroll-to-top a:hover {
-    background-color: #d0281c;
+    background-color: #1979c7;
 }
 /* End Scroll to Top */
 /* Start Cart Section */
@@ -258,6 +258,11 @@ body {
     padding: 5px;
     border-radius: 50%;
 }
+@media (max-width:767px) {
+    .plans .pro p:nth-child(13)::after {
+        right: 10px;
+    }
+}
 /* End Features Comparison */
 /* Start Gaming Profile */
 /* Start Information */
@@ -400,6 +405,15 @@ body {
 .trophies .gallary img {
     width: 80px;
     height: 80px;
+}
+@media (max-width:767px) {
+    .trophies .gallary {
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    }
+    .trophies .gallary img {
+    width: 75px;
+    height: 75px;
+}
 }
 .trophies .gallary img:nth-child(5),
 .trophies .gallary img:nth-child(9),
@@ -662,7 +676,7 @@ body {
 }
 .products .featured {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 .products .featured .img-info {
@@ -795,6 +809,11 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     gap: 15px;
+}
+@media (max-width:767px) {
+    .sidebar .gallary .images {
+        grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+    }
 }
 .sidebar .gallary .images img {
     max-width: 100%;
